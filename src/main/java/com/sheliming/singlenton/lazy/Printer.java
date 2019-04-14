@@ -10,7 +10,7 @@ public class Printer {
     private Printer() {
     }
 
-    public Printer getInstance() {
+    public static Printer getInstance() {
         if (printer == null) {
             printer = new Printer();
 

@@ -4,7 +4,6 @@ import com.sheliming.strategy.step3.capability.Quackable;
 
 public class RubberDuck extends Duck implements Quackable {
 
-    @Override
     public void quack() {
         System.out.println("吱吱叫。。。");
     }
@@ -13,5 +12,4 @@ public class RubberDuck extends Duck implements Quackable {
     public void display() {
         System.out.println("我是橡皮鸭");
     }
-
 }

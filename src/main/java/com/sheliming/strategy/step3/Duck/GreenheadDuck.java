@@ -9,12 +9,10 @@ public class GreenheadDuck extends Duck implements Flyable, Quackable {
         System.out.println("我是绿头鸭");
     }
 
-    @Override
     public void fly() {
         System.out.println("鸭子飞起来了。。。");
     }
 
-    @Override
     public void quack() {
         System.out.println("鸭子嘎嘎叫。。。");
     }

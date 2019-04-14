@@ -10,7 +10,7 @@ public class Printer4 {
     private Printer4() {
     }
 
-    public synchronized Printer4 getInstance() {
+    public synchronized static Printer4 getInstance() {
         if (printer == null) {
             synchronized (Printer4.class) {
                 if (printer == null) {
