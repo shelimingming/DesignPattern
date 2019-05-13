@@ -2,7 +2,8 @@ package com.sheliming.proxy.dynamic_proxy;
 
 import java.lang.reflect.*;
 
-// TODO 运行有问题
+// TODO 运行有问题 https://www.cnblogs.com/gonjan-blog/p/6685611.html
+
 public class TestOriginal {
     public static void main(String[] args) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException {
         //创建一个实例对象，这个对象是被代理的对象
