@@ -1,4 +1,4 @@
-package com.sheliming.proxy.aop.log;
+package com.sheliming.proxy.aop.time;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
@@ -9,24 +9,16 @@ import javax.annotation.PostConstruct;
 
 @EnableAspectJAutoProxy
 @SpringBootApplication
-public class LogAopDemo {
+public class ExpiredAopDemo {
     @Autowired
-    NeedLogService  needLogService;
-    @Autowired
-    NormalService normalService;
+    SomeService someService;
 
     public static void main(String[] args) {
-        SpringApplication.run(LogAopDemo.class, args);
+        SpringApplication.run(ExpiredAopDemo.class, args);
     }
 
     @PostConstruct
     public void test() {
-        needLogService.logMethod("xys");
-        try {
-            needLogService.exceptionMethod();
-        } catch (Exception e) {
-            // Ignore
-        }
-        normalService.someMethod();
+        someService.someMethod();
     }
 }
